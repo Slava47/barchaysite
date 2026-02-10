@@ -2,22 +2,22 @@
   "name": "Ли Бо — Чайный Бар",
   "short_name": "Ли Бо",
   "description": "Чайный бар Ли Бо — меню и подбор напитков",
-  "id": "/barchaysite/",
-  "start_url": "/barchaysite/?source=pwa&v=2",
-  "scope": "/barchaysite/",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#1a1a1a",
   "theme_color": "#8b1a1a",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/barchaysite/icons/icon-192.png",
+      "src": "/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/barchaysite/icons/icon-512.png",
+      "src": "/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
