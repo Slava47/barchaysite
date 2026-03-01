@@ -62,7 +62,7 @@ function getRecommendations(answers, items) {
                 return;
             }
             if (ans === 'алкогольный') {
-                if (item.category === 'alco' || item.category === 'tincture') score += 3;
+                if (item.category === 'alco') score += 3;
                 return;
             }
             item.tags.forEach(function (tag) {
