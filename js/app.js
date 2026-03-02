@@ -114,8 +114,10 @@
 
     container.querySelectorAll('.category-tab').forEach(btn => {
       btn.addEventListener('click', () => {
+        const savedScrollY = window.scrollY;
         currentCategory = btn.dataset.cat;
         renderMenu();
+        requestAnimationFrame(() => window.scrollTo(0, savedScrollY));
       });
     });
 
