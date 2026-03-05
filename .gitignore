@@ -8,3 +8,6 @@ api/uploads/
 *.dll
 *.so
 *.dylib
+
+# Docker / local secrets — never commit the real .env
+.env

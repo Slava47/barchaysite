@@ -99,15 +99,13 @@
   </nav>
 
   <!-- API Configuration ─────────────────────────────────────────────────────
-       Uncomment the block below and set API_BASE to enable the remote API.
-       Example: API_BASE: 'https://apibarchay.rudenko.tech'
-       Leave commented (or keep API_BASE empty) to use local MENU_DATA / QUIZ_DATA.
+       config.js sets window.__CONFIG__.API_BASE so the app can reach the API.
+       • Local dev: config.js ships with API_BASE='' (uses built-in data).
+       • Docker:    docker-entrypoint.sh rewrites config.js from the API_BASE
+                   env variable at container startup.
+       • Manual:   edit config.js and set API_BASE to your API URL.
   -->
-  <!-- <script>
-    window.__CONFIG__ = {
-      API_BASE: 'https://apibarchay.rudenko.tech'
-    };
-  </script> -->
+  <script src="config.js"></script>
 
   <script src="js/menu-data.js"></script>
   <script src="js/quiz-data.js"></script>
