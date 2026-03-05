@@ -28,6 +28,10 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
+  // Do not cache cross-origin API requests (e.g. apibarchay.rudenko.tech)
+  if (event.request.url.includes('apibarchay.rudenko.tech')) {
+    return;
+  }
   event.respondWith(
     fetch(event.request)
       .then(response => {
