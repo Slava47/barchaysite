@@ -1,1 +1,10 @@
 nohup.out
+
+# Go build artifacts
+api/barchay-api
+api/data/
+api/uploads/
+*.exe
+*.dll
+*.so
+*.dylib
