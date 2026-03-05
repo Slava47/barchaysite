@@ -7,7 +7,9 @@
   'use strict';
 
   /* ── Configuration ─────────────────────────── */
-  const API_BASE = ''; // Set to admin API URL, e.g. 'https://admin.libo.bar/api'
+  // API_BASE can be set via window.__CONFIG__.API_BASE in index.html before this script loads.
+  // If not set, the app falls back to local MENU_DATA / QUIZ_DATA.
+  const API_BASE = (window.__CONFIG__ && window.__CONFIG__.API_BASE) || '';
 
   /* ── State ─────────────────────────────────── */
   let menuData = null;
